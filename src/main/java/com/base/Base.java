@@ -35,6 +35,7 @@ public class Base
 		driver=new ChromeDriver();
 		String browser=pro.getProperty("url");
 		driver.manage().timeouts().implicitlyWait(Timeout.test_timeout, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.get(browser);
 		
 	}
