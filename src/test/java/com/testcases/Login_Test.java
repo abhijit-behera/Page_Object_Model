@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
 import com.base.Base;
 import com.home_page.Homepage;
 import com.login_page.Login;
+import com.timeout.Timeout;
 
-public class Login_Page
+public class Login_Test extends Base
 {
-	public class Login_Test extends Base
-	{
+	
 		Login log;
 		
 	public Login_Test()
@@ -48,11 +48,12 @@ public class Login_Page
 	}
 
 	@AfterMethod
-	public void shutdown()
+	public void shutdown() throws InterruptedException
 	{
+		Thread.sleep(Timeout.thread_sleep);
 		driver.quit();
 	}
 
 	}
 
-}
+
