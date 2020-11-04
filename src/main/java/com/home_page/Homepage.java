@@ -29,9 +29,9 @@ public class Homepage extends Base
 		return driver.getTitle();
 	}
 	
-	public String verify_username()
+	public boolean verify_username()
 	{
-		return verify_username.getText();
+		return verify_username.isDisplayed();
 	}
 	
 	public Contactspage click_contact_link()
