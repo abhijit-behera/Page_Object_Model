@@ -44,11 +44,11 @@ public class Login_Test extends Base
 	@Test
 	public void login()
 	{
-		Homepage home = log.login(pro.getProperty("username"), pro.getProperty("password"));
+		Homepage home =log.login(pro.getProperty("username"), pro.getProperty("password"));
 	}
 
 	@AfterMethod
-	public void shutdown() throws InterruptedException
+	public void shutdown() throws InterruptedException 
 	{
 		Thread.sleep(Timeout.thread_sleep);
 		driver.quit();

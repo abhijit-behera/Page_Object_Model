@@ -40,6 +40,7 @@ public class Homepage extends Base
 		return new Contactspage();
 	}
 	
+	
 	public Dealspage click_deals_link()
 	{
 		click_deals.click();

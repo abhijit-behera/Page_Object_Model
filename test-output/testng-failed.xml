@@ -5,8 +5,8 @@
     <classes>
       <class name="com.testcases.Contacts_Test">
         <methods>
-          <include name="verify_Category"/>
           <include name="setup"/>
+          <include name="click_new_button_select_dropdown"/>
         </methods>
       </class> <!-- com.testcases.Contacts_Test -->
     </classes>
